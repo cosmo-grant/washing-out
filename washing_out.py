@@ -6,11 +6,7 @@ Created on Sat Apr 17 18:00:32 2021
 
 Illustrates the washing out theorem.
 
-The washing out theorem says that, for any Bayesians, if they perform an
-experiment often enough and their priors in the true hypothesis are not zero,
-then their posteriors in the true hypothesis will likely end up close to 1
-(and therefore also close to each other). The plot_washing_out function plots
-how Bayesians credences evolve, so lets you visualize washing out.
+See README for details.
 """
 
 
@@ -137,15 +133,3 @@ def plot_washing_out(priors_matrix, likelihoods_matrix, true_likelihoods, reps,
     ax.set_ylabel('credence')
 
     return fig, ax
-
-
-# EXAMPLE
-# example = {
-#     'priors_matrix': np.array([[8/100, 15/100], [27/100, 60/100], [65/100, 25/100]]),
-#     'likelihoods_matrix': np.array([[.1, .3, .3, .2, .1], [.2, .2, .2, .2, .2], [.2, .4, .1, .1, .2]]),
-#     'true_likelihoods': [.2, .2, .2, .2, .2],
-#     'reps': 25,
-#     'which': ((0, 1, 2), (0, 1)),
-# }
-
-# plot_washing_out(**example)
