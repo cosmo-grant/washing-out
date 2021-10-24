@@ -1,4 +1,4 @@
-# Illustrates the washing out theorem.
+# README
 
 The washing out theorem (or one of them) says that, for any Bayesians, if they perform an experiment often enough and their priors in the true hypothesis are not zero, then their posteriors in the true hypothesis will likely end up close to 1 (and therefore also close to each other). The `plot_washing_out()` function plots how Bayesians credences evolve, so lets you visualize washing out.
 
